@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -306,6 +307,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Movimiento.Common\Movimiento.Common.csproj">
+      <Project>{3b6570a1-67c7-44b6-865d-74740eb0b8da}</Project>
+      <Name>Movimiento.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Movimiento.Domain\Movimiento.Domain.csproj">
+      <Project>{5976a21b-851a-4328-85ff-f01810b212c9}</Project>
+      <Name>Movimiento.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
